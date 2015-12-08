@@ -1,0 +1,28 @@
+// ---------------------------------------------------------
+// Compass Documentation http://compass-style.org/reference/compass/
+@import "compass";
+
+// ---------------------------------------------------------
+// Overwrite Foundations defaults. Import before core Foundation, since it uses variables.
+@import "foundation-settings";
+
+// ---------------------------------------------------------
+// Import whole Foundation framework, or comment out and import individual styles, see below.
+@import "foundation.scss";
+
+// ---------------------------------------------------------
+// ... or get only the needed foundation components ...
+//@import "foundation/components/grid";
+//@import "foundation/components/type";
+//etc
+
+// ---------------------------------------------------------
+// Sitewide styles
+// Note: SASS files syntact differs from SCSS.  See http://sass-lang.com/documentation/file.INDENTED_SYNTAX.html
+@import "manifest";
+
+// ---------------------------------------------------------
+// Debug add class 'debug' to body of page, or
+// uncomment the div below.
+body.debug div {border: 1px solid red !important;}	
+// 		     div {border: 1px solid red !important;}
